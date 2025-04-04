@@ -40,15 +40,21 @@ const services = [
     icon: <Dog />,
     linkText: "Saiba mais",
   },
-  
-  |Q1 Qa\{
+  {
     title: "Hospedagem Pet",
     description:
       "Deixe seu pet em um ambiente seguro e confortável enquanto viaja.",
     duration: "Diária",
     price: "R$ 80,00 por noite",
-    icon: <Hotel />,A+|*
-    linkText: "Reser|a
+    icon: <Hotel />,
+    linkText: "Reservar estadia",
+  },
+];
+
+export function Testimonials() {
+  const [emblaRef, emplaApi] = useEmblaCarousel({
+    loop: true,
+  });
 
   function scrollPrev() {
     emplaApi?.scrollPrev();
