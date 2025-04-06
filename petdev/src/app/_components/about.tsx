@@ -66,7 +66,7 @@ export function About() {
                 Contato via WhatsApp
               </a>
               <a
-                href="#"
+                href="https://maps.app.goo.gl/FXiygtufNj1L69XU9"
                 className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
               >
                 <MapPin className="w-5 h-5 text-black" />
