@@ -8,11 +8,12 @@ export function About() {
   return (
     <section className="bg-[#FDF6ec] py-16">
       <div className="container px-4 mx-auto">
-        
+
         {/* Corrigido: Adicionada a classe "grid" */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          <div className="relative">
+          <div className="relative" data-aos="fade-up-right"
+            data-aos-delay="300">
             <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
               <Image
                 src={about1Img}
@@ -35,7 +36,8 @@ export function About() {
             </div>
           </div>
 
-          <div className="space-y-6 mt-10 lg:mt-0">
+          <div className="space-y-6 mt-10 lg:mt-0" data-aos="fade-up-left"
+            data-aos-delay="300">
             <h2 className="text-4xl font-bold">SOBRE</h2>
             <p>
               Encontre tudo para o seu pet em um só lugar! 🐾💙 Produtos de
@@ -58,15 +60,15 @@ export function About() {
             </ul>
             <div className="flex gap-2">
               <a
-              target="_blank"
-          href={`https://wa.me/5548991011094?text=Olá vim pelo site e gostaria de mais informações`}
+                target="_blank"
+                href={`https://wa.me/5548991011094?text=Olá vim pelo site e gostaria de mais informações`}
                 className="bg-[#E84C3D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
               >
                 <WhatsappLogo className="w-5 h-5 text-white" />
                 Contato via WhatsApp
               </a>
               <a
-                href="https://maps.app.goo.gl/FXiygtufNj1L69XU9"
+                href="https://maps.app.goo.gl/Hk2pgrBqzVqk2EtV9"
                 className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
               >
                 <MapPin className="w-5 h-5 text-black" />
@@ -76,7 +78,7 @@ export function About() {
           </div>
 
         </div>
-        
+
       </div>
     </section>
   );
